@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.4/fullcalendar.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.4/fullcalendar.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+         <label for="notifications" class="label-notifications"><span class="fas fa-bell"></span></label>
+         <label for="calendar" class="label-calendar"><span class="fas fa-calendar-alt"></span></label>
+         <label for="theme" class="label-theme"><span class="fas fa-sun"></span></label>
+            <div class="home">
+             <h2>My To-Do List <img src="./images/todo-removebg-preview.png"></h2>
+             <p>Keep it up!</p>
+             <div id="progressBar">
+                <div id="progress"></div>
+             </div>
+            </div>
+            <div class="row">
+               <input type="text" id="input-box" placeholder="Add your text">
+               <label for="addCategory" class="label-plus"><span class="fas fa-plus"></span></label>
+               <button onclick="addTask()">Add</button>   
+            </div>
+            <div class="filters">
+                <div class="filter" data-filter="completed">Completed</div>
+                <div class="filter" data-filter="pending">Incomplete</div>
+                <div class="delete-all">Delete All</div>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> --->
+            </ul>
+        </div>
+
+    </div>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
